@@ -1,0 +1,265 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    height: auto;
+    background-color: #f8f8f8;
+}
+
+/* Parte do cabaçalho onde está localizado o menu de
+navegção e a imagem de um dos personagens da Sales force */
+
+header {
+    height:100px;
+    background-color:#00a1e0;
+    color:#FFF;
+}
+.header {
+    max-width:85%;
+    height:100px;
+    margin:auto;
+    display:flex;
+    align-items:center;
+}
+.logo {
+    display: flex;
+    flex: 1;
+    width:20px;
+
+}
+.logoimg {
+    width:80px;
+    height:80px;
+    display: flex;
+    align-items: center;
+}
+
+.logoimg .logoawax{
+    width: 55px;
+}
+.menu-opener {
+    display:none;
+}
+.menu {
+    flex:10;
+    display:flex;
+    justify-content: center;
+}
+.menu ul,
+.menu li {
+    list-style:none;
+}
+.menu ul {
+    display:flex;
+}
+.menu li a {
+    color:#FFF;
+    text-transform: uppercase;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.2rem;
+    text-decoration: none;
+    height:100px;
+    display:flex;
+    align-items:center;
+    border-bottom:5px solid #00a1e0;    
+    margin-right: 60px;
+}
+.menu li a:hover,
+.menu .active a {
+    border-bottom:5px solid #000000;
+    color:#000000;
+}
+
+.button {
+    display:inline-block;
+    background-color:#B28756;
+    color:#FFF;
+    text-transform: uppercase;
+    font-size:12px;
+    font-weight:600;
+    text-decoration: none;
+    padding:10px 30px;
+    margin-top:30px;
+    border-radius:20px;
+}
+
+
+/* Parte onde se encontra o resumo do que iremos fazer no projeto e 
+a definição do tamanho da página pelo .containe_firstpage*/
+
+section{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+}
+
+.container_firstpage{
+    width: 85%;
+    margin-top: 1rem;
+    flex-direction: column;
+}
+
+.resume{
+    width: 100%;
+}
+
+.title_resume{
+    text-align: center;
+    font-size: 1.9rem;
+    font-family: 'Poppins', sans-serif;
+    margin: 30px 0px;
+}
+
+.paragraph_resume{
+    font-family: 'Poppins', sans-serif;
+    text-align: justify;
+    font-size: 1rem;
+    font-weight: lighter;
+    margin-bottom: 10px;
+}
+
+.margin_space{
+    margin-bottom: 50px;
+}
+
+
+/* Parte do segundo menu interativo, onde possui imagens e links de navegação*/
+
+/* Parte onde se enctonta o CSS dos Blocos clicaveis*/
+
+
+.footer_firstpage{
+    width: 100%;
+    height:auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.banner_footer{
+    width: 100%;
+    object-fit: cover;
+    margin-bottom:60px ;
+    
+}
+
+.urso_footer{
+    width: 30%;
+}
+
+
+
+/* Inicio Index02.html */
+
+.title_secondpage{
+    text-align: center;
+    font-size: 1.9rem;
+    font-family: 'Poppins', sans-serif;
+    margin: 30px 0px;
+}
+
+.prototip{
+    display: flex;
+    height: auto;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.image_carrosel{
+    width: 40%;
+    box-shadow: 15px 10px 15px #979797;
+}
+
+.space_two{
+    margin-top: 30px;
+}
+
+/* Inicio Index03.html */
+
+.produtos_salesforce{
+    width: 45%;
+    box-shadow: 15px 10px 15px #979797;
+}
+
+.space_margin{
+    margin-top: -140px;
+}
+
+/* Inicio Index04.html */
+
+.pagina_login{
+    width: 45%;
+    margin-bottom: 50px;
+    box-shadow: 15px 10px 15px #979797;
+}
+
+/* Inicio Index05.html */
+
+.image_chatbot{
+    width: 45%;
+    box-shadow: 15px 10px 15px #979797;
+}
+
+/* Inicio Index06.html */
+
+.image_acessibilidade{
+    width: 45%;
+    box-shadow: 15px 10px 15px #979797;
+}
+
+
+
+@media(max-width:1380px){
+    .menu li a{
+        font-size: 0.8rem;
+        margin-right:13px;
+        margin-left:13px;
+    }
+}
+@media(max-width:1380px){
+    .menu li a{
+        font-size: 0.8rem;
+        margin-right:6px;
+        margin-left:6px;
+    }
+
+    .logo {
+        display: none;
+    
+    }
+}
+
+@media(max-width: 775px){
+
+    .menu li a{
+        font-size: 0.5rem;
+        margin-left:2px;
+    }
+}
+
+@media(max-width: 775px){
+
+    .menu li a{
+        font-size: 0.5rem;
+        margin-left:2px;
+    }
+}
+
+@media(max-width: 485px){
+
+    .menu li a{
+        font-size: 0.3rem;
+        margin-left:10px;
+    }
+
+    .space_margin{
+        margin-top: -80px;
+    }
+}
+
