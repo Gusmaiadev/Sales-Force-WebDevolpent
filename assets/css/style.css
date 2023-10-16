@@ -172,6 +172,7 @@ section{
 }
 
 .image_carrosel{
+    margin-top: 40px;
     width: 40%;
     box-shadow: 15px 10px 15px #979797;
 }
@@ -183,17 +184,19 @@ section{
 /* Inicio Index03.html */
 
 .produtos_salesforce{
+    margin-top: 40px;
     width: 45%;
     box-shadow: 15px 10px 15px #979797;
 }
 
 .space_margin{
-    margin-top: -140px;
+    margin-top: -90px;
 }
 
 /* Inicio Index04.html */
 
 .pagina_login{
+    margin-top: 40px;
     width: 45%;
     margin-bottom: 50px;
     box-shadow: 15px 10px 15px #979797;
@@ -202,6 +205,7 @@ section{
 /* Inicio Index05.html */
 
 .image_chatbot{
+    margin-top: 40px;
     width: 45%;
     box-shadow: 15px 10px 15px #979797;
 }
@@ -209,24 +213,72 @@ section{
 /* Inicio Index06.html */
 
 .image_acessibilidade{
+    margin-top: 40px;
     width: 45%;
     box-shadow: 15px 10px 15px #979797;
 }
 
 
+/* Inicio Index07.html */
+
+.photos_time{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 100px;
+}
+
+.photo_um, .photo_dois, .photo_tres{
+    display: flex;
+    flex: 1;
+    flex-direction:column;
+    align-items: center;
+}
+
+
+.photo_width{
+   width: 450px;
+   height: 450px;
+   object-fit: cover;
+   box-shadow: 15px 10px 15px #979797;
+}
+
+.photo_name{
+    margin-top: 30px;
+}
+
+.name, .rm{
+    font-size: 1.1rem;
+    font-family: 'Poppins', sans-serif;
+}
+
+.rm{
+    text-align: center;
+}
+
+
+
+
+@media(max-width:1650px){
+    .menu li a{
+        font-size: 1rem;
+        margin-right:18px;
+        margin-left:18px;
+    }
+
+    .photo_width{
+        width: 300px;
+        height: 300px;
+     }
+     
+}
 
 @media(max-width:1380px){
     .menu li a{
-        font-size: 0.8rem;
-        margin-right:13px;
-        margin-left:13px;
-    }
-}
-@media(max-width:1380px){
-    .menu li a{
-        font-size: 0.8rem;
-        margin-right:6px;
-        margin-left:6px;
+        font-size: 0.9rem;
+        margin-right:20px;
+        margin-left:20px;
     }
 
     .logo {
@@ -235,20 +287,52 @@ section{
     }
 }
 
-@media(max-width: 775px){
+@media(max-width: 1085px){
 
     .menu li a{
-        font-size: 0.5rem;
-        margin-left:2px;
+        font-size: 0.7rem;
+        margin:10px;
     }
+
+    .photo_width{
+        width: 200px;
+        height: 200px;
+     }
+     
+     .name, .rm{
+        font-size: 0.7rem;
+        font-family: 'Poppins', sans-serif;
+    }
+
 }
 
+
 @media(max-width: 775px){
 
     .menu li a{
         font-size: 0.5rem;
-        margin-left:2px;
+        margin-left:10px;
     }
+
+    .photos_time{
+        flex-direction: column;
+    }
+
+    .photo_um, .photo_dois, .photo_tres{
+        display: flex;
+        flex: 1;
+        flex-direction:row;
+        width: 100%;
+    }
+
+    .photo_name{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
 }
 
 @media(max-width: 485px){
